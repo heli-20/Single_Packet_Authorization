@@ -1,21 +1,19 @@
-# SPA (Secure Password Authentication)
+# Secure Single Packet Authorization (SPA) System
 
-A secure password authentication system implementing biometric authentication using Windows Hello and fingerprint verification.
+A secure authentication system implementing Single Packet Authorization with biometric verification and Rijndael encryption.
 
 ## Project Structure
-
-- `src/`
-  - `biometric/` - Contains biometric authentication implementation
-  - `data/` - Contains database files
-  - `spa_client.py` - Client-side implementation
-  - `spa_server.py` - Server-side implementation
-  - `intermediate_server.py` - Intermediate server logic
-
-## Requirements
-
-- Python 3.x
-- Windows 10 (for Windows Hello functionality)
-- Biometric hardware support
+```
+spa_system/
+├── src/
+│   ├── spa_client.py        # Client implementation
+│   ├── intermediate_server.py # Intermediate server implementation
+│   └── spa_server.py        # SPA server implementation (to be implemented)
+├── .env                     # Configuration file (create from .env.template)
+├── .env.template           # Template for configuration
+├── requirements.txt        # Python dependencies
+└── README.md              # This file
+```
 
 ## Features
 - Single Packet Authorization (SPA) implementation
