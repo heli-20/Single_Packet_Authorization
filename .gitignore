@@ -4,7 +4,6 @@ __pycache__/
 *$py.class
 *.so
 .Python
-env/
 build/
 develop-eggs/
 dist/
@@ -16,6 +15,7 @@ lib64/
 parts/
 sdist/
 var/
+wheels/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -23,13 +23,33 @@ var/
 # Virtual Environment
 venv/
 ENV/
+env/
+.env
 
-# IDE
+# IDE specific files
 .idea/
 .vscode/
 *.swp
 *.swo
+.project
+.pydevproject
+.settings/
 
-# OS
+# Operating System
 .DS_Store
-Thumbs.db 
+Thumbs.db
+*.db
+
+# Project specific
+*.log
+*.sqlite3
+*.db
+*.csv
+!src/data/fingerprint_db.csv  # Keep this specific CSV file
+
+# Security related
+*.key
+*.pem
+*.cert
+*.password
+secrets.json 
