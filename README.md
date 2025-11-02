@@ -3,17 +3,16 @@
 A secure authentication system implementing Single Packet Authorization with biometric verification and Rijndael encryption.
 
 ## Project Structure
-```
+
 spa_system/
 ├── src/
-│   ├── spa_client.py        # Client implementation
-│   ├── intermediate_server.py # Intermediate server implementation
-│   └── spa_server.py        # SPA server implementation (to be implemented)
-├── .env                     # Configuration file (create from .env.template)
-├── .env.template           # Template for configuration
-├── requirements.txt        # Python dependencies
-└── README.md              # This file
-```
+│   ├── spa_client.py        
+│   ├── intermediate_server.py 
+│   └── spa_server.py       
+├── .env                    
+├── .env.template          
+├── requirements.txt   
+└── README.md             
 
 ## Features
 - Single Packet Authorization (SPA) implementation
